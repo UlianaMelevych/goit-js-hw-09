@@ -1,18 +1,88 @@
-/**
-  |============================
-  | include css partials with
-  | default @import url()
-  |============================
-*/
-/* Common styles */
-@import url('./reset.css');
-@import url('./base.css');
-@import url('./container.css');
-@import url('./animations.css');
+ul{
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px 24px;
+ padding: 24px 100px;
+ margin: 0;
+ overflow: hidden;
+ 
+}
 
-/* Sections style */
-@import url('./header.css');
-@import url('./vite-promo.css');
-@import url('./badges.css');
-@import url('./back-link.css');
-@import url('./footer.css');
+img {
+  display: block;
+}
+.sl-overlay {
+  background-color: rgba(46, 47, 66, 0.8) !important;
+}
+.feedback-form{
+  display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+gap: 16px;
+border-radius: 8px;
+padding: 24px;
+width: 408px;
+height: 296px;
+margin: auto;
+}
+.label-form {
+  font-family: "Montserrat", sans-serif;
+font-weight: 400;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.04em;
+color: #2e2f42;
+
+}
+.inp-email {
+  display: flex;
+align-items: flex-start;
+justify-content: flex-start;
+flex-direction: column;
+gap: 8px;
+width: 360px;
+height: 40px;
+
+}
+.inp-email:focus::placeholder {
+  fill: #fff;
+border: 1px solid #000;
+box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+opacity: 0; /* Робимо плейсхолдер прозорим */
+}
+
+
+.text-com {
+  display: flex;
+align-items: flex-start;
+justify-content: flex-start;
+flex-direction: column;
+gap: 8px;
+width: 360px;
+height: 80px;
+}
+.btn-com {
+  font-family: "Montserrat", sans-serif;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.04em;
+color: #fff;
+  display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: row;
+gap: 10px;
+border: none;
+border-radius: 8px;
+padding: 8px 16px;
+width: 95px;
+height: 40px;
+background-color: #4e75ff;
+}
+.btn-com:hover{
+  background-color: #6c8cff;
+}
